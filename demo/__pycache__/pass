@@ -1,0 +1,10 @@
+
+
+
+
+
+
+FLUSH PRIVILEGES;
+GRANT ALL ON poll.* TO 'poller'@'%';
+
+CREATE USER 'poller'@'%' IDENTIFIED WITH mysql_native_password BY 'p@ssW0rd123';
